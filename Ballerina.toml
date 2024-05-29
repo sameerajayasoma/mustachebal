@@ -1,0 +1,23 @@
+[package]
+org = "samjs"
+name = "mustache"
+version = "0.1.0"
+distribution = "2201.8.5"
+keywords = ["mustache", "template", "templates"]
+
+[build-options]
+observabilityIncluded = true
+
+[platform.java17]
+graalvmCompatible = true
+
+[[platform.java17.dependency]]
+groupId = "com.github.spullara.mustache.java"
+artifactId = "compiler"
+version = "0.8.18"
+
+# transitive dependency of com.github.spullara.mustache.java:compiler:0.8.18
+[[platform.java17.dependency]]
+groupId = "com.google.guava"
+artifactId = "guava"
+version = "16.0.1"
